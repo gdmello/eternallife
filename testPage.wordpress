@@ -1,0 +1,41 @@
+<p style="text-align: center;"><a href="http://www.eternallifesaver.com/contact-us/">asdvsdv<img class="aligncenter size-thumbnail wp-image-234" alt="phone-hand" src="http://www.eternallifesaver.com/wp-content/uploads/2013/02/phone-hand-150x150.jpg" width="150" height="150" /></a></p>
+[raw]<script type="text/javascript">// < ![CDATA[
+
+var d = new Date(); 
+//alert("Day of the week: "+d.getDay()); 
+var day = d.getDay();
+//document.write("Day of the week: "+d.getDay());
+var weekday=new Array(7);
+weekday[0]="Sunday";
+weekday[1]="Monday";
+weekday[2]="Tuesday";
+weekday[3]="Wednesday";
+weekday[4]="ForJesusWithTabs1.html";
+weekday[5]="ForJesusWithTabs6.html";
+weekday[6]="ForJesusWithTabs1.html";
+
+if (day == 4) {
+var multiLine="THE LINE GOES MULTI";
+
+document.write(multiLine);
+document.write('I.');
+document.write('Judas arrives at the garden, and when he had betrayed his master with a kiss, there fell on Jesus those insolent ');
+document.write('servants, and bound him ');
+} 
+// ]]></script>
+<div id="ForJesus"></div>
+<script type="text/javascript">// < ![CDATA[
+function applyTabStyleForJesus() {
+  jQuery( "#ForJesus" ).tabs();
+}
+
+jQuery("#ForJesus").load("http://www.eternallifesaver.com/wp-content/uploads/2013/03/" + weekday[d.getDay()], applyTabStyleForJesus );
+// ]]></script>
+
+<div id="iFramePrayers">
+   <iframe width="400" height="400" id="dailyPrayersIframe">
+
+   </iframe>
+</div>
+
+[/raw]
