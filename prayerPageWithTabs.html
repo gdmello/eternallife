@@ -1,79 +1,81 @@
 <html>
 <head>
-<meta charset="utf-8" />
-<title>Daily Prayer</title>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<meta charset="utf-8" />
+	<title>Daily Prayer</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<style type="text/css">
+			/* Common CSS for jQuery demonstration pages. */
+		body {
+			margin: 2px 4px 2px 2px;
+			background: url(../img/marblegbor.gif) repeat-y;
+			font-family: Arial, Helvetica, Sans-serif;
+		}
+
+
+		section header, article header {
+			border-bottom: 1px solid #3c8243;
+			font-weight: bold;
+		}
+		section[role=complementary] header {
+			margin: 1em 0em 0.5em 0em;
+			font-size: 120%;
+		}
+
+		pre {
+			clear: both;
+			margin: 10px 0px;
+			line-height: 1em;
+		} 
+		pre code {
+			font-size: 90%;
+		}
+
+
+		input, select, textarea {
+			font-family: Arial, Helvetica, Sans-serif;
+			font-size: 100%;
+		}
+
+
+		pre.ui-state-active, pre .ui-state-active, .ui-widget-content pre .ui-state-active {
+			color: #000;
+			font-weight: normal;
+		}
+
+		/* Tabs overrides */
+		.ui-tabs { 
+			padding: 0px; 
+			background: none; 
+			border-width: 0px; 
+		}
+		.ui-tabs .ui-tabs-nav { 
+			padding-left: 0px; 
+			background: transparent; 
+			border-width: 0px 0px 1px 0px; 
+			border-color: #3c8243;
+			-moz-border-radius: 0px; 
+			-webkit-border-radius: 0px; 
+			border-radius: 0px; 
+		}
+		.ui-tabs-nav .ui-state-active {
+			border-color: #3c8243;
+		}
+		.ui-tabs .ui-tabs-panel { 
+			padding: 1em;
+			background: #f5f3e5 url(http://code.jquery.com/ui/1.8.23/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) repeat-x scroll 50% top; 
+			border-width: 0px 1px 1px 1px; 
+		}
+	</style>
+	<script>
+		$(function() {
+		$( "#tabs" ).tabs();
+		});
+	</script>
 </head>
 <body>
 <div id="tabs">
-	
-	 <style type="text/css">
-		/* Common CSS for jQuery demonstration pages. */
-body {
-	margin: 2px 4px 2px 2px;
-	background: url(../img/marblegbor.gif) repeat-y;
-	font-family: Arial, Helvetica, Sans-serif;
-}
-
-
-section header, article header {
-	border-bottom: 1px solid #3c8243;
-	font-weight: bold;
-}
-section[role=complementary] header {
-	margin: 1em 0em 0.5em 0em;
-	font-size: 120%;
-}
-
-pre {
-	clear: both;
-	margin: 10px 0px;
-	line-height: 1em;
-} 
-pre code {
-	font-size: 90%;
-}
-
-
-input, select, textarea {
-	font-family: Arial, Helvetica, Sans-serif;
-	font-size: 100%;
-}
-
-
-pre.ui-state-active, pre .ui-state-active, .ui-widget-content pre .ui-state-active {
-	color: #000;
-	font-weight: normal;
-}
-
-/* Tabs overrides */
-.ui-tabs { 
-    padding: 0px; 
-    background: none; 
-    border-width: 0px; 
-}
-.ui-tabs .ui-tabs-nav { 
-    padding-left: 0px; 
-    background: transparent; 
-    border-width: 0px 0px 1px 0px; 
-	border-color: #3c8243;
-    -moz-border-radius: 0px; 
-    -webkit-border-radius: 0px; 
-    border-radius: 0px; 
-}
-.ui-tabs-nav .ui-state-active {
-	border-color: #3c8243;
-}
-.ui-tabs .ui-tabs-panel { 
-	padding: 1em;
-    background: #f5f3e5 url(http://code.jquery.com/ui/1.8.23/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) repeat-x scroll 50% top; 
-    border-width: 0px 1px 1px 1px; 
-}
-
-
-	</style>
 	
 	This is the body for Our Lord Jesus Christ!
 	<ul>
