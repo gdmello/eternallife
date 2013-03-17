@@ -6,13 +6,11 @@
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 	<style type="text/css">
-			/* Common CSS for jQuery demonstration pages. */
 		body {
 			margin: 2px 4px 2px 2px;
-			background: url(../img/marblegbor.gif) repeat-y;
+			background: rgb(0,0,0);
 			font-family: Arial, Helvetica, Sans-serif;
 		}
-
 
 		section header, article header {
 			border-bottom: 1px solid #3c8243;
@@ -32,12 +30,10 @@
 			font-size: 90%;
 		}
 
-
 		input, select, textarea {
 			font-family: Arial, Helvetica, Sans-serif;
 			font-size: 100%;
 		}
-
 
 		pre.ui-state-active, pre .ui-state-active, .ui-widget-content pre .ui-state-active {
 			color: #000;
@@ -50,34 +46,68 @@
 			background: none; 
 			border-width: 0px; 
 		}
+		
 		.ui-tabs .ui-tabs-nav { 
 			padding-left: 0px; 
-			background: transparent; 
-			border-width: 0px 0px 1px 0px; 
+			background: #777777; 
+			border-width: 0px 0px 0px 0px; 
 			border-color: #3c8243;
 			-moz-border-radius: 0px; 
 			-webkit-border-radius: 0px; 
 			border-radius: 0px; 
 		}
+		
 		.ui-tabs-nav .ui-state-active {
-			border-color: #3c8243;
+			#border-color: #3c8243;
+			color: #777777;
 		}
+		
 		.ui-tabs .ui-tabs-panel { 
-			padding: 1em;
-			background: #f5f3e5 url(http://code.jquery.com/ui/1.8.23/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) repeat-x scroll 50% top; 
-			border-width: 0px 1px 1px 1px; 
+			#padding: 1em;
+			#background: #f5f3e5 url(http://code.jquery.com/ui/1.8.23/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) repeat-x scroll 50% top; 
+			border-width: 0px 0px 0px 0px; 
+		}
+		
+		.ui-widget-content {
+			color: #ddd !important;
+		}
+		
+		.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+			#color: #232323;
+		}
+		
+		/* Non active tab link visited color */
+		.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+			color: #1F57FF;
+		}
+		
+		/* Active tab visited color */
+		.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+			color: #FF0F3B;
+		}
+				
+		/* Tab background color */
+		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+			background: #BBBBBB;
+		}
+		
+		/* Active Tab Settings */
+		.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+			background: #232323;
+			#border: 1px solid #D4CCB0;
+			color: #FF0F3B;
+			font-weight: bold;
 		}
 	</style>
 	<script>
 		$(function() {
-		$( "#tabs" ).tabs();
+			$( "#tabs" ).tabs();
 		});
 	</script>
 </head>
-<body>
+<body bgcolor="red">
 <div id="tabs">
 	
-	This is the body for Our Lord Jesus Christ!
 	<ul>
     <li><a href="#tabs-1">First Reflection</a></li>
     <li><a href="#tabs-2">Second Reflection</a></li>
