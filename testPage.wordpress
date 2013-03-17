@@ -29,8 +29,12 @@ function applyTabStyleForJesus() {
   jQuery( "#ForJesus" ).tabs();
 }
 
-jQuery("#ForJesus").load("http://www.eternallifesaver.com/wp-content/uploads/2013/03/" + weekday[d.getDay()], applyTabStyleForJesus );
-// ]]></script>
+document.getElementById('dailyPrayersIframe').src = "http://www.eternallifesaver.com/wp-content/uploads/2013/03/" + weekday[d.getDay()];
+
+//jQuery("#ForJesus").load("http://www.eternallifesaver.com/wp-content/uploads/2013/03/" + //weekday[d.getDay()], applyTabStyleForJesus );
+// ]]>
+
+</script>
 
 <div id="iFramePrayers">
    <iframe width="400" height="400" id="dailyPrayersIframe">
