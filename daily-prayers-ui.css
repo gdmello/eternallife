@@ -1,0 +1,70 @@
+body {
+			margin: 2px 4px 2px 2px;
+			background: rgb(0,0,0);
+			font-family: Verdana, Arial, Sans-serif;
+		}
+
+		/* Tabs overrides */
+		.ui-tabs { 
+			padding: 0px; 
+			background: none; 
+			border-width: 0px; 
+		}
+		
+		.ui-tabs .ui-tabs-nav { 
+			padding-left: 0px; 
+			background: url(http://www.eternallifesaver.com/wp-content/themes/calvary-free/images/bg_nav.png);
+			border-width: 0px 0px 0px 0px; 
+			border-color: #3c8243;
+			-moz-border-radius: 0px; 
+			-webkit-border-radius: 0px; 
+			border-radius: 0px; 
+		}
+		
+		.ui-tabs-nav .ui-state-active {
+			color: #777777;
+		}
+		
+		.ui-tabs .ui-tabs-panel { 
+			url(http://code.jquery.com/ui/1.8.23/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) repeat-x scroll 50% top; 
+			border-width: 0px 0px 0px 0px; 
+		}
+		
+		.ui-widget-content {
+			color: #ddd !important;
+			font-family: Verdana, Arial, Sans-serif;
+		}
+		
+		/* Non active tab link visited color */
+		.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+			color: #006376;
+			font-weight: bold;
+		}
+		
+		/* Active tab visited color */
+		.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+			color: #FF0F3B;
+		}
+				
+		/* Tab background color */
+		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+			#background: #444444;
+			background: #232323;
+			text-shadow: 1px 1px 1px #000;
+		}
+		
+		/* Active Tab Settings */
+		.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+			background: #232323;
+			#border: 1px solid #D4CCB0;
+			color: #FF0F3B;
+			text-shadow: 1px 1px 1px #000;
+			font-weight: bold;
+		}
+		
+		.ui-widget-content {
+			font-family: Verdana,Arial,sans-serif/*{ffDefault}*/;
+		}
+		
+		/* Remove Tab Border */
+		#tabs.ui-widget-content { border:none; padding:0px; margin:0px; }
