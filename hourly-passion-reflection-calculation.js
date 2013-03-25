@@ -48,7 +48,7 @@ for(var i=0; i<prayerHoursAscending.length; i++) {
 	
 	if(Date.compare(today, prayerHoursAscending[i]) < 0 ) {
 		document.write("<br>prayer time to display: "+prayerHoursAscending[i-1]);
-		document.write("<br>prayer time to display: "+prayerHoursAscending[i-1].toString("HH:mm"));
+		document.write("<br>prayer time to display: "+prayerHoursAscending[i-1].toString("HH-mm"));
 		break;
 	}
 	
