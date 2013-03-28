@@ -38,19 +38,14 @@ Date.today().set({ hour: 22, minute: 30 }),
 Date.today().set({ hour: 23, minute: 0 }),
 Date.today().set({ hour: 23, minute: 30 })];
 
-
-document.write("<br>prayerHours.length(): "+prayerHoursAscending.length);
-document.write("<br>");
-document.write(today);
-document.write("<br>");
-
-for(var i=0; i<prayerHoursAscending.length; i++) {
+var hourlyPrayerToDisplay;
+for(var i=0; i<prayerHoursAscending .length; i++) {
 	
 	if(Date.compare(today, prayerHoursAscending[i]) < 0 ) {
-		document.write("<br>prayer time to display: "+prayerHoursAscending[i-1]);
-		document.write("<br>prayer time to display: "+prayerHoursAscending[i-1].toString("HH-mm"));
+		hourlyPrayerToDisplay = 'passionOfJesusHourlyPrayer-'+prayerHoursAscending[i-1].toString("HH-mm")+'.html';
 		break;
 	}
-	
 }
+
+document.getElementById('hourlyPrayersIframe').src = "http://www.eternallifesaver.com/wp-content/uploads/2013/03/" + hourlyPrayerToDisplay;
 
