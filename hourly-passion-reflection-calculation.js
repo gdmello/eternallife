@@ -36,13 +36,16 @@ Date.today().set({ hour: 21, minute: 30 }),
 Date.today().set({ hour: 22, minute: 0 }),
 Date.today().set({ hour: 22, minute: 30 }),
 Date.today().set({ hour: 23, minute: 0 }),
-Date.today().set({ hour: 23, minute: 30 })];
+Date.today().set({ hour: 23, minute: 30 }),
+(Date.today().set({ hour: 0, minute: 0 }).addDays(1))];
 
 var hourlyPrayerToDisplay;
 for(var i=0; i<prayerHoursAscending .length; i++) {
 	
 	if(Date.compare(today, prayerHoursAscending[i]) < 0 ) {
-		hourlyPrayerToDisplay = 'passionOfJesusHourlyPrayer-'+prayerHoursAscending[i-1].toString("HH-mm")+'.html';
+		var pageIndex = ((i-1) < 0)? 0: i-1;//A little trickiness around midnight.
+
+		hourlyPrayerToDisplay = 'passionOfJesusHourlyPrayer-'+prayerHoursAscending[pageIndex].toString("HH-mm")+'.html';
 		break;
 	}
 }
